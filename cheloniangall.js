@@ -5,6 +5,7 @@
 // @grant       none
 // @version     1.0
 // @icon        https://cheloniangall.com/images/icon.png
+// @supportURL  https://cheloniangall.com/faq.php
 // @author      BlaiseEbuth
 // @description Integrate the ChelonianGall webchat in CodinGame.
 // ==/UserScript==
