@@ -3,7 +3,7 @@
 // @namespace   cheloniangall.com
 // @match       https://www.codingame.com/*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @icon        https://cheloniangall.com/images/icon.png
 // @supportURL  https://cheloniangall.com/faq.php
 // @author      BlaiseEbuth
@@ -45,6 +45,8 @@ setInterval(
         chatStyle.textContent = "\
           #cg-chat-container {\
             order: 1;\
+            display: flex;\
+            flex-direction: row;\
             width: fit-content;\
             height: 100%;\
           }\
@@ -57,27 +59,27 @@ setInterval(
             display: none;\
           }\
           #cg-chat-toggle {\
-            position: fixed;\
-            top: 50%;\
-            right: 0;\
-            z-index: 42;\
+            display: flex;\
+            flex-direction: column;\
+            justify-content: center;\
             width: fit-content;\
-            height: fit-content;\
-            padding: 5px 2px 5px 5px;\
-            border-radius: 5px 0 0 5px;\
-            background-color: rgb(242, 187, 19);\
+            height: 100%;\
+            background-color: rgb(54, 62, 72);\
             font-size: 20px;\
             font-weight: bold;\
-            color: rgb(69, 76, 85);\
+            color: rgb(242, 187, 19);\
             cursor: pointer;\
           }\
           #cg-chat-toggle:hover {\
-            background-color: rgb(222, 172, 22);\
+            background-color: rgb(242, 187, 19);\
+            color: rgb(54, 62, 72);\
           }\
           #cg-chat-toggle.open {\
             right: 301px;\
           }\
           #cg-chat-toggle::before {\
+            display: block;\
+            margin: 0 2px 0 5px;\
             content: '<';\
           }\
           #cg-chat-toggle.open::before {\
